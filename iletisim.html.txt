@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randevu ve İletişim | Uzm. Psikolog [Adınız Soyadınız]</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header>
+        </header>
+
+    <section id="iletisim-detay">
+        <h2>Randevu Talep Edin</h2>
+        <p>Lütfen aşağıdaki formu doldurun. Size en kısa sürede dönüş yaparak ilk görüşme saatimizi belirleyelim.</p>
+
+        <form action="https://formspree.io/f/xeorrlpp" method="POST">
+            <label for="adsoyad">Adınız Soyadınız:</label>
+            <input type="text" id="adsoyad" name="Ad Soyad" required>
+
+            <label for="email">E-posta Adresiniz:</label>
+            <input type="email" id="email" name="E-posta" required>
+
+            <label for="telefon">Telefon Numaranız:</label>
+            <input type="text" id="telefon" name="Telefon">
+            
+            <label for="konu">Görüşme Konusu (Kısa):</label>
+            <input type="text" id="konu" name="Konu" required>
+
+            <label for="mesaj">Bize Kısa Bir Mesaj Bırakın:</label>
+            <textarea id="mesaj" name="Mesaj" rows="5"></textarea>
+
+            <button type="submit" class="cta-button">Talebi Gönder</button>
+        </form>
+
+        <p style="margin-top: 30px;">Alternatif İletişim: [mailiniz]@mail.com veya 05xx xxx xx xx</p>
+    </section>
+
+    <footer>
+        </footer>
+
+</body>
+</html>
