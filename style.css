@@ -10,8 +10,8 @@ body {
 
 /* Header ve Navigasyon */
 header {
-    background-color: #EBD9FF; /* Kurumsal Mavi */
-    color: white;
+    background-color: #400174; /* Kurumsal Mavi */
+    color: Black;
     padding: 15px 5%;
     display: flex;
     justify-content: space-between;
@@ -28,7 +28,7 @@ header {
 }
 
 nav a {
-    color: white;
+    color: black;
     text-decoration: none;
     margin-left: 25px;
     font-size: 1.05em;
@@ -36,7 +36,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #f1c40f; /* Vurgu Rengi */
+    color: #47C9C9; /* Vurgu Rengi */
 }
 
 /* Ana Bölümler İçin Ortak Stil */
@@ -46,14 +46,14 @@ section {
 }
 
 h1, h2 {
-    color: #3d5a80;
+    color: #CFB9FA;
 }
 
 /* CTA Buton Stili (Harekete Geçirme) */
 .cta-button {
     display: inline-block;
     background-color: ##4B00A0; /* Turuncu/Kiremit Rengi */
-    color: white;
+    color: Black;
     padding: 12px 30px;
     text-decoration: none;
     border-radius: 5px;
@@ -66,13 +66,13 @@ h1, h2 {
 }
 
 .cta-button:hover {
-    background-color: #a74e37;
+    background-color: #421657;
 }
 
 /* Hero Alanı */
 #hero {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/hero.jpg') no-repeat center center/cover;
-    color: white;
+    color: Black;
     padding: 150px 20px;
     min-height: 400px;
 }
@@ -97,13 +97,13 @@ h1, h2 {
 }
 
 .alan h3 {
-    color: #e07a5f;
+    color: #D0CCED;
 }
 
 /* Footer (Alt Bilgi) */
 footer {
-    background-color: #333;
-    color: #bbb;
+    background-color: #F0E7E4;
+    color: #000000;
     text-align: center;
     padding: 25px 0;
     font-size: 0.9em;
@@ -125,7 +125,7 @@ form label {
     margin-top: 15px;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #3d5a80;
+    color: #DDCBF5;
 }
 
 form input[type="text"], form input[type="email"], form textarea {
