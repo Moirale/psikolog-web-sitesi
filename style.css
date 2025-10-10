@@ -1,0 +1,183 @@
+/* Genel Ayarlar ve Font */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+}
+
+/* Header ve Navigasyon */
+header {
+    background-color: #EBD9FF; /* Kurumsal Mavi */
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 1.05em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f1c40f; /* Vurgu Rengi */
+}
+
+/* Ana Bölümler İçin Ortak Stil */
+section {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #3d5a80;
+}
+
+/* CTA Buton Stili (Harekete Geçirme) */
+.cta-button {
+    display: inline-block;
+    background-color: ##4B00A0; /* Turuncu/Kiremit Rengi */
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #a74e37;
+}
+
+/* Hero Alanı */
+#hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/hero.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 150px 20px;
+    min-height: 400px;
+}
+
+/* Uzmanlık Alanları */
+#uzmanlik .alanlar {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.alan {
+    background-color: white;
+    padding: 30px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    width: 30%;
+    min-width: 250px;
+    text-align: left;
+}
+
+.alan h3 {
+    color: #e07a5f;
+}
+
+/* Footer (Alt Bilgi) */
+footer {
+    background-color: #333;
+    color: #bbb;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.9em;
+}
+
+/* İletişim Formu Stili */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #3d5a80;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Padding'i genişliğe dahil eder */
+}
+
+/* Hakkımda Sayfası Stili */
+.profil-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.profil-img {
+    flex: 1;
+}
+
+.profil-img img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.profil-text {
+    flex: 2;
+}
+
+/* Mobil Cihazlar İçin Ayarlar (Duyarlılık) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    nav {
+        margin-top: 10px;
+    }
+    nav a {
+        margin: 0 10px;
+    }
+    #uzmanlik .alanlar {
+        flex-direction: column;
+    }
+    .alan {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .profil-container {
+        flex-direction: column;
+    }
+}
